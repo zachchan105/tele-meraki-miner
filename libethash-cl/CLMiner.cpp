@@ -842,7 +842,7 @@ void CLMiner::compileKernel(uint64_t period_seed, cl::Program& program, cl::Kern
     code += std::string(CLMiner_kernel);
 
     addDefinition(code, "GROUP_SIZE", m_settings.localWorkSize);
-    addDefinition(code, "ACCESSES", 64);
+    addDefinition(code, "ACCESSES", 32);
     addDefinition(code, "LIGHT_WORDS", m_epochContext->light_cache_num_items);
     addDefinition(code, "PROGPOW_DAG_BYTES", m_epochContext->full_dataset_size);
     addDefinition(code, "PROGPOW_DAG_ELEMENTS", m_epochContext->full_dataset_num_items / 2);

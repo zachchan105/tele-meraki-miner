@@ -27,7 +27,7 @@ struct Search_results
     uint32_t count = 0;
 };
 
-#define ACCESSES 64
+#define ACCESSES 32
 #define THREADS_PER_HASH (128 / 16)
 
 typedef struct
