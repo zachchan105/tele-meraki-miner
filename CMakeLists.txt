@@ -20,7 +20,7 @@ HunterGate(
 )
 
 
-project(evrprogpowminer)
+project(telemerakiminer)
 set(PROJECT_VERSION 1.3.0)
 
 
@@ -103,7 +103,7 @@ if (APICORE)
 	add_subdirectory(libapicore)
 endif()
 
-add_subdirectory(evrprogpowminer)
+add_subdirectory(telemerakiminer)
 
 
 if(WIN32)
