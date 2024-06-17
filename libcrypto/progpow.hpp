@@ -22,8 +22,8 @@ constexpr static uint32_t kRegs{32};                // uint32 registers per lane
 constexpr static uint32_t kDag_loads{4};            // uint32 loads from the DAG per lane
 constexpr static uint32_t kCache_bytes{16 * 1024};  // size of the cached portion of the DAG
 constexpr static uint32_t kDag_count{32};           // DAG accesses, also the number of loops executed
-constexpr static uint32_t kCache_count{24};         // random cache accesses per loop
-constexpr static uint32_t kMath_count{32};          // random math instructions per loop
+constexpr static uint32_t kCache_count{12};         // random cache accesses per loop
+constexpr static uint32_t kMath_count{5};          // random math instructions per loop
 
 constexpr static uint32_t kWords_per_lane{sizeof(ethash::hash2048) / (sizeof(uint32_t) * kLanes)};
 
